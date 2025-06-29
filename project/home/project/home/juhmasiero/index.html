@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livraria Encanto das Letras</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(to right, #fdf6ec, #f8efe0);
+        color: #4e342e;
+      }
+      header {
+        background: linear-gradient(90deg, #bcaaa4, #a1887f);
+        color: white;
+        padding: 30px 20px;
+        text-align: center;
+      }
+      nav {
+        background: #d7ccc8;
+        padding: 10px 0;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+      nav a {
+        text-decoration: none;
+        color: #4e342e;
+        font-weight: bold;
+        font-size: 14px;
+        transition: color 0.3s;
+      }
+      nav a:hover {
+        color: #6d4c41;
+      }
+      section {
+        padding: 30px 20px;
+        text-align: center;
+      }
+      h2 {
+        color: #6d4c41;
+        margin-bottom: 20px;
+      }
+      .produtos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+      .produto {
+        background-color: #fff8f0;
+        border: 1px solid #d7ccc8;
+        border-radius: 10px;
+        width: 260px;
+        padding: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s;
+      }
+      .produto:hover {
+        transform: translateY(-5px);
+      }
+      .produto img {
+        width: 100px;
+        height: auto;
+        margin-bottom: 10px;
+      }
+      .produto h3 {
+        color: #5d4037;
+        margin: 10px 0 5px;
+      }
+      .produto p {
+        font-size: 14px;
+        margin: 5px 0;
+      }
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: left;
+        padding: 20px;
+        background-color: #fff8f0;
+        border: 1px solid #d7ccc8;
+        border-radius: 10px;
+      }
+      label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+        color: #6d4c41;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #d7ccc8;
+        background-color: #ffffff;
+        font-size: 14px;
+      }
+      button {
+        margin-top: 20px;
+        width: 100%;
+        background-color: #8d6e63;
+        color: white;
+        border: none;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #6d4c41;
+      }
+      footer {
+        background: #d7ccc8;
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+        color: #4e342e;
+        margin-top: 40px;
+      }
+      @media (max-width: 600px) {
+        nav ul {
+          flex-direction: column;
+          gap: 10px;
+        }
+        .produtos {
+          flex-direction: column;
+          align-items: center;
+        }
+        form {
+          width: 90%;
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Livraria Encanto das Letras</h1>
+      <p><strong>Nome:</strong> Júlia Masiero Costa</p>
+      <p><strong>Nome:</strong> José Matias Prates de Jesus</p>
+      <p><strong>Curso:</strong> TSI – Tecnologia em Sistemas para Internet</p>
+      <p><strong>Instituição:</strong> IFSul</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#romance">Romance</a></li>
+        <li><a href="#ficcao">Ficção</a></li>
+        <li><a href="#infantil">Infantil</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <section id="home">
+      <h2>Bem-vindo à Livraria Encanto das Letras</h2>
+      <p>Descubra o sabor da leitura em cada página.</p>
+    </section>
+
+    <section id="romance">
+      <h2>Romance</h2>
+      <div class="produtos">
+        <div class="produto">
+          <img
+            src="/public/cartas de amor eem paris.jpg"
+            alt="Cartas de Amor de Paris"
+          />
+          <h3>Cartas de Amor de Paris</h3>
+          <p>Uma paixão inesperada na cidade do amor.</p>
+          <p><strong>R$ 49,90</strong></p>
+        </div>
+        <div class="produto">
+          <img src="/public/Romeu e julieta.jpg" alt="Romeu e Julieta" />
+          <h3>Romeu e Julieta</h3>
+          <p>Cartas que atravessam o tempo e o coração.</p>
+          <p><strong>R$ 59,90</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ficcao">
+      <h2>Ficção Científica</h2>
+      <div class="produtos">
+        <div class="produto">
+          <img
+            src="/public/Esta é uma história sobre viagem no tempo_E uma….jpg"
+            alt="O Mistério do Tempo"
+          />
+          <h3>O Mistério do Tempo</h3>
+          <p>Uma batalha estelar cheia de suspense e aventura.</p>
+          <p><strong>R$ 69,90</strong></p>
+        </div>
+        <div class="produto">
+          <img
+            src="/public/Hoje o Listas Literárias traz uma seleção com 10….jpg"
+            alt="O Corte do Ar"
+          />
+          <h3>O Corte do Ar</h3>
+          <p>O futuro pode ser reescrito?</p>
+          <p><strong>R$ 64,90</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="infantil">
+      <h2>Infantil</h2>
+      <div class="produtos">
+        <div class="produto">
+          <img
+            src="/public/5 livros infantis sobre medo - Revista Crescer….jpg"
+            alt="O Menino que Tinha Medo de Errar"
+          />
+          <h3>O Menino que Tinha Medo de Errar</h3>
+          <p>Uma aventura mágica pelo mundo.</p>
+          <p><strong>R$ 39,90</strong></p>
+        </div>
+        <div class="produto">
+          <img
+            src="/public/Embarque na magia de ‘Contos Maravilhosos’ nesta….jpg"
+            alt="O Patinho Feio"
+          />
+          <h3>O Patinho Feio</h3>
+          <p>Descubra os segredos da natureza.</p>
+          <p><strong>R$ 44,90</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Preencha o formulário abaixo para falar conosco:</p>
+      <form action="#" method="post">
+        <label for="nome">Nome</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Seu nome"
+          required
+        />
+
+        <label for="email">E‑mail</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="seu@exemplo.com"
+          required
+        />
+
+        <label for="mensagem">Mensagem</label>
+        <textarea
+          id="mensagem"
+          name="mensagem"
+          rows="4"
+          placeholder="Escreva sua mensagem aqui..."
+          required
+        ></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2025 Livraria Encanto das Letras. Todos os direitos reservados.
+      </p>
+    </footer>
+  </body>
+</html>
